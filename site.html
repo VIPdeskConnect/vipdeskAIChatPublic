@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Sample Site</title>
+
+		<!--     *****************************     -->
+		<!--     *****************************     -->
+		<!--     ***  VIPdesk AI Chat Code ***     -->
+		<!--     *****************************     -->
+		<!--     *****************************     -->
+
+		<!-- Include both scripts below on all pages/domains    -->
+		<!-- This will allow for chat to persist accross pages  -->
+
+		<!-- This script will set all the constants needed to configure the code-->
+		<script id="VIPdeskAIChatInit">
+			// Specify bot ID provided by VIPdesk
+			// NOT 2 ids are provided, one for staging and one for production
+			window.vipdeskBotId = 'x1111111111111'
+
+			// Specify the hostnames where the chat should be enabled.
+			// If you include the chat code on multiple sites/domains, you can specify the hostnames where the chat should be enabled/visible.
+			// If chat is not active/open, it will not appear on other domains, event though the script is loaded.
+			window.chatEnabledHosts = [
+				'subdomain.mysite.com',
+				'anotherSubdomain.mysite.com',
+			]
+		</script>
+
+		<!-- This will load the actual chat code. -->
+		<!-- Change the location to where you are hosting the chatScript.js code -->
+
+		<script
+			id="VIPdeskAIChatLoad"
+			src="./chatScript.js"></script>
+
+		<!--     *****************************     -->
+		<!--     ***  END VIPdesk AI Chat  ***     -->
+		<!--     *****************************     -->
+	</head>
+	<body></body>
+</html>
+l
