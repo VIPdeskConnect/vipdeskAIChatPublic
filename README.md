@@ -4,9 +4,9 @@ In order to implement VIPdesk AI Chat, you will need to do 2 things
 
 1. Download the **chatScript.js** and save it to your site directory
 2. Review the code from **site.html** and add both script tags to your site.
-   2.1 Be sure to customize the **chatEnabledHosts** with the one provided
-   2.2 Be sure to customize the **chatEnabledHosts** with any domain you wish chat to be visible. You may omit this if chat is to appear accross all domains that host the code.
-   2.3 Be sure to change the reference location **chatScript.js** to match where you stored the **chatScript.js** file.
+   - Be sure to customize the **chatEnabledHosts** with the one provided
+   - Be sure to customize the **chatEnabledHosts** with any domain you wish chat to be visible. You may omit this if chat is to appear accross all domains that host the code.
+   - Be sure to change the reference location **chatScript.js** to match where you stored the **chatScript.js** file.
 
 # Testing
 
