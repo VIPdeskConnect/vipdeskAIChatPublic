@@ -93,6 +93,7 @@ function initChat() {
 				if (eventData.data && typeof eventData.data === 'string') {
 					try {
 						const response = JSON.parse(eventData.data)
+						console.log(response)
 						if (response.event_code) {
 							switch (response.event_code) {
 								case 'ym_bot_id':
@@ -116,6 +117,12 @@ function initChat() {
 								case 'ym-bot-closed':
 									console.log('ym-bot-closed')
 									setCookie(`${storagePrefix}State`, 'closed')
+									if (
+										!window.chatEnabledHosts.length ||
+										window.chatEnabledHosts.includes(window.location.hostname)
+									) {
+										window.YellowMessengerPlugin.show()
+									}
 									break
 
 								case 'ym-bot-opened':
