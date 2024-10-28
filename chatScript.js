@@ -79,9 +79,9 @@ function initChat() {
 					ymFrameBranding.id = '#ymFramebrandingOld'
 					ymFrameBranding.style.display = 'none'
 					vipBranding.innerHTML = `Provided by ${provider}`
-					vipBranding.addEventListener('click', () => {
-						window.open(`https://${provider}`, '_blank')
-					})
+					// vipBranding.addEventListener('click', () => {
+					// 	window.open(`https://${provider}`, '_blank')
+					// })
 					ymFrameBranding.parentNode.parentNode.append(vipBranding)
 					branded = true
 				}
